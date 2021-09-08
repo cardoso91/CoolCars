@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		8008DB3B26D808DA004A3C3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008DB3A26D808DA004A3C3A /* AppDelegate.swift */; };
 		8008DB3D26D808DA004A3C3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008DB3C26D808DA004A3C3A /* SceneDelegate.swift */; };
-		8008DB3F26D808DA004A3C3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008DB3E26D808DA004A3C3A /* ViewController.swift */; };
+		8008DB3F26D808DA004A3C3A /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008DB3E26D808DA004A3C3A /* WelcomeVC.swift */; };
 		8008DB4226D808DA004A3C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8008DB4026D808DA004A3C3A /* Main.storyboard */; };
 		8008DB4426D808DD004A3C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8008DB4326D808DD004A3C3A /* Assets.xcassets */; };
 		8008DB4726D808DD004A3C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8008DB4526D808DD004A3C3A /* LaunchScreen.storyboard */; };
 		8008DB5226D808DD004A3C3A /* Cool_CarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008DB5126D808DD004A3C3A /* Cool_CarsTests.swift */; };
 		8008DB5D26D808DD004A3C3A /* Cool_CarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008DB5C26D808DD004A3C3A /* Cool_CarsUITests.swift */; };
+		80D9845026D960FD00859476 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D9844F26D960FD00859476 /* DetailVC.swift */; };
+		80D9845226D96D0B00859476 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D9845126D96D0B00859476 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		8008DB3726D808DA004A3C3A /* Cool_Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cool_Cars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8008DB3A26D808DA004A3C3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8008DB3C26D808DA004A3C3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8008DB3E26D808DA004A3C3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8008DB3E26D808DA004A3C3A /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		8008DB4126D808DA004A3C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8008DB4326D808DD004A3C3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8008DB4626D808DD004A3C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		8008DB5826D808DD004A3C3A /* Cool_CarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cool_CarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8008DB5C26D808DD004A3C3A /* Cool_CarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cool_CarsUITests.swift; sourceTree = "<group>"; };
 		8008DB5E26D808DD004A3C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D9844F26D960FD00859476 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		80D9845126D96D0B00859476 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		8008DB3926D808DA004A3C3A /* Cool_Cars */ = {
 			isa = PBXGroup;
 			children = (
+				8042ED3626D95F930034FE3B /* Model */,
+				8042ED3526D95F8D0034FE3B /* Controller */,
+				8042ED3426D95F860034FE3B /* View */,
 				8008DB3A26D808DA004A3C3A /* AppDelegate.swift */,
 				8008DB3C26D808DA004A3C3A /* SceneDelegate.swift */,
-				8008DB3E26D808DA004A3C3A /* ViewController.swift */,
 				8008DB4026D808DA004A3C3A /* Main.storyboard */,
 				8008DB4326D808DD004A3C3A /* Assets.xcassets */,
 				8008DB4526D808DD004A3C3A /* LaunchScreen.storyboard */,
@@ -126,6 +132,30 @@
 				8008DB5E26D808DD004A3C3A /* Info.plist */,
 			);
 			path = Cool_CarsUITests;
+			sourceTree = "<group>";
+		};
+		8042ED3426D95F860034FE3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8042ED3526D95F8D0034FE3B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8008DB3E26D808DA004A3C3A /* WelcomeVC.swift */,
+				80D9844F26D960FD00859476 /* DetailVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8042ED3626D95F930034FE3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80D9845126D96D0B00859476 /* Car.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8008DB3F26D808DA004A3C3A /* ViewController.swift in Sources */,
+				8008DB3F26D808DA004A3C3A /* WelcomeVC.swift in Sources */,
+				80D9845026D960FD00859476 /* DetailVC.swift in Sources */,
+				80D9845226D96D0B00859476 /* Car.swift in Sources */,
 				8008DB3B26D808DA004A3C3A /* AppDelegate.swift in Sources */,
 				8008DB3D26D808DA004A3C3A /* SceneDelegate.swift in Sources */,
 			);

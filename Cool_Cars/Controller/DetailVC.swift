@@ -9,10 +9,26 @@ import UIKit
 
 class DetailVC: UIViewController {
 
+    @IBOutlet weak var carImg: UIImageView!
+    @IBOutlet weak var makeLbl: UILabel!
+    @IBOutlet weak var yearAndModelLbl: UILabel!
+    @IBOutlet weak var colorLbl: UILabel!
+    @IBOutlet weak var transmitionLbl: UILabel!
+    @IBOutlet weak var milageLbl: UILabel!
+    
+    
+    var car: Car!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        carImg.image = UIImage(named: car.image)
+        makeLbl.text = car.make
+        yearAndModelLbl.text = car.yearAndModel
+        colorLbl.text = car.color
+        transmitionLbl.text = car.transmition
+        milageLbl.text = car.milage
+        
     }
     
 
